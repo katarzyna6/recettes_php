@@ -8,14 +8,14 @@
                             <li><a href ="recettes/entrees/entree3.html">Entrée 3</a></li>
                         </ul>
                     </li>
-                    <li><a href ="index.php?page=plats">Les plats</a>
+                    <li><a href ="index.php?page=plat">Les plats</a>
                         <ul class="sous-menu">
                             <li><a href ="recettes/plats/plat1.html">Plat 1</a></li>
                             <li><a href ="recettes/plats/plat2.html">Plat 2</a></li>
                             <li><a href ="recettes/plats/plat3.html">Plat 3</a></li>
                         </ul>
                     </li>
-                    <li><a href ="index.php?page=desserts">Les desserts</a>
+                    <li><a href ="index.php?page=dessert">Les desserts</a>
                         <ul class="sous-menu">
                             <li><a href ="recettes/desserts/dessert1.html">Dessert 1</a></li>
                             <li><a href ="recettes/desserts/dessert2.html">Dessert 2</a></li>

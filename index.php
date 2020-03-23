@@ -1,6 +1,26 @@
 <?php 
 var_dump($_GET);
 
+//$souspage = (isset($_GET["souspage"]))? $_GET["souspage"] : "entree1";
+
+$page = isset($_GET["page"])? $_GET["page"] : "home";
+
+switch ($page) {
+    case "home":
+        echo "$page";
+        break;
+    case "entree":
+        echo "$page";
+        break;
+    case "plat":
+        echo "$page";
+        break;
+    case "dessert":
+        echo "$page";
+        break;
+    default : echo "$page";
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -14,19 +34,13 @@ var_dump($_GET);
     
     <body>
         <header>
-        <?php
-            require "html/menu.php";
-        ?>     
+            <?php require "html/menu.php"; ?>     
         </header>
-        
+
         <article>
-            <h2 class="text-center">Suggestion du jour</h2>
-            <ul class="row items">
-                <li class="img-bullet col-4 text-center"><img src="img/entree3.jpg" alt="Photo de l'entrée 3"><br><a href ="recettes/entrees/entree3.html">Entrée 3</a></li>
-                <li class="img-bullet col-4 text-center"><img src="img/plat1.jpg" alt="Photo du plat 1"><br><a href ="recettes/plats/plat1.html">Plat 1</a></li>
-                <li class="img-bullet col-4 text-center"><img src="img/dessert1.jpg" alt="Photo du dessert 1"><br><a href ="recettes/desserts/dessert1.html">Dessert 1</a></li>
-            </ul>
+            <?php require "recettes/home.html"; ?>
         </article>
+     
     </body>
 
 </html>
