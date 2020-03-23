@@ -7,18 +7,18 @@ $page = isset($_GET["page"])? $_GET["page"] : "home";
 
 switch ($page) {
     case "home":
-        echo "$page";
+        $input="recettes/home.html";
         break;
     case "entree":
-        echo "$page";
+        $input="recettes/entree.html";
         break;
     case "plat":
-        echo "$page";
+        $input="recettes/plat.html";
         break;
     case "dessert":
-        echo "$page";
+        $input="recettes/dessert.html";
         break;
-    default : echo "$page";
+    default : $input="recettes/home.html";
 }
 
 ?>
@@ -37,9 +37,8 @@ switch ($page) {
             <?php require "html/menu.php"; ?>     
         </header>
 
-        <article>
-            <?php require "recettes/home.html"; ?>
-        </article>
+        <?php require $input; ?>
+       
      
     </body>
 
