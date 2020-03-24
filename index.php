@@ -18,8 +18,12 @@ switch ($page) {
     case "dessert":
         $input="recettes/dessert.html";
         break;
+        case "recette":
+        $input = "html/recette.php";
+        break;
     default : $input="recettes/home.html";
 }
+
 
 ?>
 
