@@ -1,27 +1,29 @@
 <?php
 require "recettes/recettes.php";
-var_dump($recette_test);
-$recette = $recette_test;
+//var_dump($entree1);
+$recette = $entree1;
+
 ?>
 
-<h1><?php $recette[$titre] ?></h1>
+<h1><?php echo $recette["titre"] ?></h1>
         
-<div><?php $recette[$image] ?></div>
+<div><img src=" <?php echo $recette["image"] ?>" alt=""></div>
 
 <section class="row bg-light">
     <div class="col-6">
         <table>
             <tr>
-                <th><?php $recette[$temps] ?></th>
-                <th><?php $recette[$personnes] ?></th>
-                <th><?php $recette[$difficulte] ?></th>
-                <th><?php $recette[$cout] ?></th>
-           
-        <h2><?php $recette[$ingredients] ?></h2>
-       
+                <th><?php echo $recette["temps"] ?></th>
+                <th><?php echo $recette["personnes"] ?></th>
+                <th><?php echo $recette["difficulte"] ?></th>
+                <th><?php echo $recette["cout"] ?></th>
+            </tr>
+
+        <h2><?php echo $recette["ingredients"] ?></h2>
+    </div>
     
     <div class="col-6">
-        <h2><?php $recette[$etapes] ?></h2>
+        <?php echo $recette["etapes"] ?>
         
     </div>
 </section>

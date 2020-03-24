@@ -10,7 +10,7 @@ switch ($page) {
         $input="recettes/home.html";
         break;
     case "entree":
-        $input="recettes/entree.html";
+        $input="recettes/entree.php";
         break;
     case "plat":
         $input="recettes/plat.html";
