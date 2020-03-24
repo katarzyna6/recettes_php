@@ -10,16 +10,16 @@
         </li>
         <li><a href ="index.php?page=plat">Les plats</a>
             <ul class="sous-menu">
-                <li><a href ="index.php?page=recette">Plat 1</a></li>
-                <li><a href ="index.php?page=recette">Plat 2</a></li>
-                <li><a href ="index.php?page=recette">Plat 3</a></li>
+                <li><a href ="index.php?page=recettes3">Plat 1</a></li>
+                <li><a href ="index.php?page=recettes3">Plat 2</a></li>
+                <li><a href ="index.php?page=recettes3">Plat 3</a></li>
             </ul>
         </li>
         <li><a href ="index.php?page=dessert">Les desserts</a>
             <ul class="sous-menu">
-                <li><a href ="index.php?page=recette">Dessert 1</a></li>
-                <li><a href ="index.php?page=recette">Dessert 2</a></li>
-                <li><a href ="index.php?page=recette">Dessert 3</a></li>
+                <li><a href ="index.php?page=recettes2">Dessert 1</a></li>
+                <li><a href ="index.php?page=recettes2">Dessert 2</a></li>
+                <li><a href ="index.php?page=recettes2">Dessert 3</a></li>
             </ul>
         </li>
     </ul>

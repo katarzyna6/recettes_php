@@ -1,8 +1,8 @@
 <?php 
 
-    $entree1 = [
-        "titre" => "Entree 1",
-        "image" => "img/entree1.jpg",
+    $dessert1 = [
+        "titre" => "Dessert 1",
+        "image" => "img/dessert1.jpg",
         "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a dolor justo. ...",
         "temps" => "15sec",
         "personnes" => 8,
@@ -14,9 +14,9 @@
         Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu'à évaporation."
     ];
 
-    $entree2 = [ 
-        "titre" => "Entree 2",
-        "image" => "img/entree2.jpg",
+    $dessert2 = [ 
+        "titre" => "Dessert 2",
+        "image" => "img/dessert2.jpg",
         "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a dolor justo. ...",
         "temps" => "15sec",
         "personnes" => 8,
@@ -28,9 +28,9 @@
         Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu'à évaporation."
     ];
 
-    $entree3 = [
-        "titre" => "Entree 3",
-        "image" => "img/entree3.jpg",
+    $dessert3 = [
+        "titre" => "Dessert 3",
+        "image" => "img/dessert3.jpg",
         "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a dolor justo. ...",
         "temps" => "15sec",
         "personnes" => 8,
@@ -43,9 +43,9 @@
     ];
         
         
-$entrees = [$entree1, $entree2, $entree3];
+$desserts = [$dessert1, $dessert2, $dessert3];
 
-$size = sizeof($entrees);
+$size = sizeof($desserts);
 $titre = "";
 $image = "";
 $description = "";
@@ -59,18 +59,18 @@ $liste = "";
 $html = "";
 
 for($i = 0; $i < $size; $i++){
-    $titre = $entrees[$i]["titre"];
-    $image = $entrees[$i]["image"];
-    $description = $entrees[$i]["description"];
-    $temps = $entrees[$i]["temps"];
-    $personnes = $entrees[$i]["personnes"];
-    $difficulte = $entrees[$i]["difficulte"];
-    $cout = $entrees[$i]["cout"];
+    $titre = $desserts[$i]["titre"];
+    $image = $desserts[$i]["image"];
+    $description = $desserts[$i]["description"];
+    $temps = $desserts[$i]["temps"];
+    $personnes = $desserts[$i]["personnes"];
+    $difficulte = $desserts[$i]["difficulte"];
+    $cout = $desserts[$i]["cout"];
     //$ingredients = $entrees[$i]["ingredients"];
     //$etapes = $entrees[$i]["etapes"];
     $html .= "<figure class='col-4'>
     <h2 class='text-center'>$titre</h2>
-    <div class='img-block'><a href='entrees/entree1.html'><img src='$image' alt='Image entrée 1'>
+    <div class='img-block'><a href='desserts/dessert1.html'><img src='$image' alt='Image dessert 1'>
     </a></div>
     <p>$description</p>
     </figure>";
@@ -78,7 +78,18 @@ for($i = 0; $i < $size; $i++){
     //$ingredients = explode("///", $ingredients);
     //$etapes = explode("///", $etapes);
 
-
 }
 
 ?>
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Desserts</title>
+        <meta charset="utf-8">
+         <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    </head>
+<body>
+    <?php echo $html ?>
+</body>
+</html>

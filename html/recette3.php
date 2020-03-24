@@ -1,13 +1,13 @@
 <?php
-require "recettes/recettes.php";
-var_dump($entree1);
-$recette = $entree1;
+require "recettes/recettes3.php";
+var_dump($plat1);
+$recette3 = $plat1;
 
 ?>
 
-<h1><?php echo $recette["titre"] ?></h1>
+<h1><?php echo $recette3["titre"] ?></h1>
         
-<div><img src=" <?php echo $recette["image"] ?>" alt=""></div>
+<div><img src=" <?php echo $recette3["image"] ?>" alt=""></div>
 
 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a dolor justo. ..."</p>
 
@@ -15,17 +15,17 @@ $recette = $entree1;
     <div class="col-6">
         <table>
             <tr>
-                <th><?php echo $recette["temps"] ?></th>
-                <th><?php echo $recette["personnes"] ?></th>
-                <th><?php echo $recette["difficulte"] ?></th>
-                <th><?php echo $recette["cout"] ?></th>
+                <th><?php echo $recette3["temps"] ?></th>
+                <th><?php echo $recette3["personnes"] ?></th>
+                <th><?php echo $recette3["difficulte"] ?></th>
+                <th><?php echo $recette3["cout"] ?></th>
             </tr>
 
-        <h2><?php echo $recette["ingredients"] ?></h2>
+        <h2><?php echo $recette3["ingredients"] ?></h2>
     </div>
     
     <div class="col-6">
-        <?php echo $recette["etapes"] ?>
+        <?php echo $recette3["etapes"] ?>
         
     </div>
 </section>

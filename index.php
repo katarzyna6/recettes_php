@@ -13,17 +13,22 @@ switch ($page) {
         $input="recettes/entree.php";
         break;
     case "plat":
-        $input="recettes/plat.html";
+        $input="recettes/plat.php";
         break;
     case "dessert":
-        $input="recettes/dessert.html";
+        $input="recettes/dessert.php";
         break;
         case "recette":
         $input = "html/recette.php";
         break;
+        case "recettes2":
+        $input = "html/recette2.php";
+        break;
+        case "recettes3":
+        $input = "html/recette3.php";
+        break;
     default : $input="recettes/home.html";
 }
-
 
 ?>
 
