@@ -82,15 +82,3 @@ for($i = 0; $i < $size; $i++){
 }
 
 ?>
-
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <title>Plats</title>
-        <meta charset="utf-8">
-         <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    </head>
-<body>
-    <?php echo $html ?>
-</body>
-</html>

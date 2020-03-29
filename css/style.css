@@ -222,3 +222,7 @@ table, th, td {
 .items li {
     margin-left: 10px;
 }
+
+.tabl {
+    border: 1px solid black;
+}

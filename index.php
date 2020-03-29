@@ -1,33 +1,31 @@
 <?php 
-var_dump($_GET);
-
-//$souspage = (isset($_GET["souspage"]))? $_GET["souspage"] : "entree1";
+//var_dump($_GET);
 
 $page = isset($_GET["page"])? $_GET["page"] : "home";
 
 switch ($page) {
     case "home":
-        $input="recettes/home.html";
-        break;
+        $include ="recettes/home.html";
+    break;
     case "entree":
-        $input="recettes/entree.php";
-        break;
+        $include="recettes/entree.php";
+    break;
     case "plat":
-        $input="recettes/plat.php";
-        break;
+        $include="recettes/plat.php";
+    break;
     case "dessert":
-        $input="recettes/dessert.php";
-        break;
-        case "recette":
-        $input = "html/recette.php";
-        break;
-        case "recettes2":
-        $input = "html/recette2.php";
-        break;
-        case "recettes3":
-        $input = "html/recette3.php";
-        break;
-    default : $input="recettes/home.html";
+        $include="recettes/dessert.php";
+    break;
+    case "recette":
+        $include = "html/recette.php";
+    break;
+    case "recettes2":
+        $include = "html/recette2.php";
+    break;
+    case "recettes3":
+        $include = "html/recette3.php";
+    break;
+    default : $include ="recettes/home.html";
 }
 
 ?>
@@ -45,10 +43,9 @@ switch ($page) {
         <header>
             <?php require "html/menu.php"; ?>     
         </header>
-
-        <?php require $input; ?>
-       
-     
+        <section>
+            <?php require $include; ?>
+        </section>
     </body>
 
 </html>

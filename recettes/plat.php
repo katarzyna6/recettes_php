@@ -1,4 +1,4 @@
-<?php require "recettes3.php" ?>
+<?php require "recettes3.php"; ?>
 
 <h1 class="text-center">Plats</h1>
 

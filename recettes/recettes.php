@@ -2,7 +2,7 @@
 
     $entree1 = [
         "titre" => "Entree 1",
-        "image" => "img/entree1.jpg",
+        "image" => "entree1.jpg",
         "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a dolor justo. ...",
         "temps" => "15sec",
         "personnes" => 8,
@@ -16,7 +16,7 @@
 
     $entree2 = [ 
         "titre" => "Entree 2",
-        "image" => "img/entree2.jpg",
+        "image" => "entree2.jpg",
         "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a dolor justo. ...",
         "temps" => "15sec",
         "personnes" => 8,
@@ -30,7 +30,7 @@
 
     $entree3 = [
         "titre" => "Entree 3",
-        "image" => "img/entree3.jpg",
+        "image" => "entree3.jpg",
         "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a dolor justo. ...",
         "temps" => "15sec",
         "personnes" => 8,
@@ -43,9 +43,12 @@
     ];
         
         
-$entrees = [$entree1, $entree2, $entree3];
+$entrees = [
+    "nom" => "Les entrees",
+    "recettes" => [$entree1, $entree2, $entree3]
+];
 
-$size = sizeof($entrees);
+/*$size = sizeof($entrees);
 $titre = "";
 $image = "";
 $description = "";
@@ -79,6 +82,6 @@ for($i = 0; $i < $size; $i++){
     //$etapes = explode("///", $etapes);
 
 
-}
+}*/
 
 ?>
